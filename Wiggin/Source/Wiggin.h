@@ -7,9 +7,9 @@ class Wiggin : public BWAPI::AIModule
 {
 public:
   // Virtual functions for callbacks, leave these as they are.
-  //virtual void onStart();
+  virtual void onStart();
   //virtual void onEnd(bool isWinner);
-  //virtual void onFrame();
+  virtual void onFrame();
   //virtual void onSendText(std::string text);
   //virtual void onReceiveText(BWAPI::Player player, std::string text);
   //virtual void onPlayerLeft(BWAPI::Player player);

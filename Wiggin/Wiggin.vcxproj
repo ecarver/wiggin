@@ -94,6 +94,7 @@
     <ClCompile Include="Source\Wiggin.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="primary_strategist.h" />
     <ClInclude Include="Source\Wiggin.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
