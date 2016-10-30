@@ -1,5 +1,5 @@
 #include <BWAPI.h>
-//#include "tactician.h"
+#include "BWEM/bwem.h"
 
 // Can this be encapsulated within an attributes object? Finalize once
 enum objective_type {
@@ -16,17 +16,15 @@ struct objective {
 	double intelligence;
 	double defensibility;
 	objective_type type;
+	int priority;
 };
 
-// Class used
-class primary_strategist {
-	primary_strategist();
-	~primary_strategist();
-protected:
-	// TBD: Make a map-sized (or some scaled size) of these?
-	std::list<objective> objectives;
-
-
+class tactician {
 public:
-	const std::list<objective>& get_objectives(int);
+	tactician();
+protected:
+	int determine_priority = [](objective left, objective right) { return left.priority < right.priority; };
+	std::priority_queue<objective, std::vector<objective>, decltype(determine_priority)> all_objectives;
+public:
+	void add_objective(const objective);
 };

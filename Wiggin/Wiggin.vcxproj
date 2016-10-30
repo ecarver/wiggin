@@ -90,11 +90,51 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\BWEM\area.cpp" />
+    <ClCompile Include="Source\BWEM\base.cpp" />
+    <ClCompile Include="Source\BWEM\bwapiExt.cpp" />
+    <ClCompile Include="Source\BWEM\bwem.cpp" />
+    <ClCompile Include="Source\BWEM\cp.cpp" />
+    <ClCompile Include="Source\BWEM\EasyBMP.cpp" />
+    <ClCompile Include="Source\BWEM\examples.cpp" />
+    <ClCompile Include="Source\BWEM\graph.cpp" />
+    <ClCompile Include="Source\BWEM\gridMap.cpp" />
+    <ClCompile Include="Source\BWEM\map.cpp" />
+    <ClCompile Include="Source\BWEM\mapDrawer.cpp" />
+    <ClCompile Include="Source\BWEM\mapImpl.cpp" />
+    <ClCompile Include="Source\BWEM\mapPrinter.cpp" />
+    <ClCompile Include="Source\BWEM\neutral.cpp" />
+    <ClCompile Include="Source\BWEM\tiles.cpp" />
+    <ClCompile Include="Source\BWEM\utils.cpp" />
+    <ClCompile Include="Source\BWEM\winutils.cpp" />
     <ClCompile Include="Source\Dll.cpp" />
+    <ClCompile Include="Source\primary_strategist.cpp" />
     <ClCompile Include="Source\Wiggin.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="primary_strategist.h" />
+    <ClInclude Include="Source\BWEM\area.h" />
+    <ClInclude Include="Source\BWEM\base.h" />
+    <ClInclude Include="Source\BWEM\bwapiExt.h" />
+    <ClInclude Include="Source\BWEM\bwem.h" />
+    <ClInclude Include="Source\BWEM\cp.h" />
+    <ClInclude Include="Source\BWEM\defs.h" />
+    <ClInclude Include="Source\BWEM\EasyBMP.h" />
+    <ClInclude Include="Source\BWEM\EasyBMP_BMP.h" />
+    <ClInclude Include="Source\BWEM\EasyBMP_DataStructures.h" />
+    <ClInclude Include="Source\BWEM\EasyBMP_VariousBMPutilities.h" />
+    <ClInclude Include="Source\BWEM\examples.h" />
+    <ClInclude Include="Source\BWEM\graph.h" />
+    <ClInclude Include="Source\BWEM\gridMap.h" />
+    <ClInclude Include="Source\BWEM\map.h" />
+    <ClInclude Include="Source\BWEM\mapDrawer.h" />
+    <ClInclude Include="Source\BWEM\mapImpl.h" />
+    <ClInclude Include="Source\BWEM\mapPrinter.h" />
+    <ClInclude Include="Source\BWEM\neutral.h" />
+    <ClInclude Include="Source\BWEM\tiles.h" />
+    <ClInclude Include="Source\BWEM\utils.h" />
+    <ClInclude Include="Source\BWEM\winutils.h" />
+    <ClInclude Include="Source\primary_strategist.h" />
+    <ClInclude Include="Source\tactician.h" />
     <ClInclude Include="Source\Wiggin.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
