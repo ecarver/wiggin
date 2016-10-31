@@ -14,17 +14,18 @@ struct objective {
 	BWAPI::TilePosition location;
 	double value;
 	double intelligence;
-	double defensibility;
 	objective_type type;
 	int priority;
 };
 
+const auto determine_priority = [](const objective& left, const objective& right) { return left.priority < right.priority; };
 class tactician {
 public:
 	tactician();
 protected:
-	int determine_priority = [](objective left, objective right) { return left.priority < right.priority; };
 	std::priority_queue<objective, std::vector<objective>, decltype(determine_priority)> all_objectives;
+	int execute_objectives();
+	
 public:
 	void add_objective(const objective);
 };

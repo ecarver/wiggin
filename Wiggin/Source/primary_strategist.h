@@ -15,6 +15,7 @@ protected:
 	double enemy_power;
 	std::vector<BWAPI::TilePosition> expansions;
 	std::vector<BWAPI::TilePosition> enemy_expansions;
+	tactician tactical;
 public:
 	void update_strategy();
 	void strategize();

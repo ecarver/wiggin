@@ -109,6 +109,7 @@
     <ClCompile Include="Source\BWEM\winutils.cpp" />
     <ClCompile Include="Source\Dll.cpp" />
     <ClCompile Include="Source\primary_strategist.cpp" />
+    <ClCompile Include="Source\tactician.cpp" />
     <ClCompile Include="Source\Wiggin.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +134,7 @@
     <ClInclude Include="Source\BWEM\tiles.h" />
     <ClInclude Include="Source\BWEM\utils.h" />
     <ClInclude Include="Source\BWEM\winutils.h" />
+    <ClInclude Include="Source\platoon.h" />
     <ClInclude Include="Source\primary_strategist.h" />
     <ClInclude Include="Source\tactician.h" />
     <ClInclude Include="Source\Wiggin.h" />
